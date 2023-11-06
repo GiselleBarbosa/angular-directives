@@ -1,5 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 
+import { AutofocusComponent } from './components/2-autofocus/autofocus/autofocus.component';
 import { CustomValidatorComponent } from './components/1-custom-validator/custom-validator.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
     path: 'custom-validator',
     component: CustomValidatorComponent,
+  },
+  {
+    path: 'autofocus',
+    component: AutofocusComponent,
   },
 ];
 

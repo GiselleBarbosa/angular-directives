@@ -18,8 +18,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NgModule } from '@angular/core';
-import { PasswordValidatorDirective } from './directives/custom-validator/password-validator.directive';
+import { PasswordValidatorDirective } from './directives/1-custom-validator/password-validator.directive';
 import { RouterOutlet } from '@angular/router';
+import { AutofocusComponent } from './components/2-autofocus/autofocus/autofocus.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { RouterOutlet } from '@angular/router';
     PasswordValidatorDirective,
     CustomValidatorComponent,
     HomeComponent,
+    AutofocusComponent,
   ],
   imports: [
     BrowserModule,
