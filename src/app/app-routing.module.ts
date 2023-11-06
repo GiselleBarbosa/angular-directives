@@ -1,6 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { AutofocusComponent } from './components/2-autofocus/autofocus.component';
+import { ClickOutsideComponent } from './components/6-click-outside/click-outside.component';
 import { CustomValidatorComponent } from './components/1-custom-validator/custom-validator.component';
 import { DraggableComponent } from './components/4-draggable/draggable.component';
 import { EllipsisComponent } from './components/5-ellipsis/EllipsisComponent';
@@ -39,9 +40,15 @@ const routes: Routes = [
     path: 'draggable',
     component: DraggableComponent,
   },
+  
   {
     path: 'ellipsis',
     component: EllipsisComponent,
+  },
+
+  {
+    path: 'click-outside',
+    component: ClickOutsideComponent,
   },
 ];
 

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AutofocusComponent } from './components/2-autofocus/autofocus.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { ClickOutsideComponent } from './components/6-click-outside/click-outside.component';
 import { ContentComponent } from './navigation/content/content.component';
 import { CustomValidatorComponent } from './components/1-custom-validator/custom-validator.component';
 import { DraggableComponent } from './components/4-draggable/draggable.component';
@@ -39,6 +40,7 @@ import { RouterOutlet } from '@angular/router';
     LazyLoadComponent,
     DraggableComponent,
     EllipsisComponent,
+    ClickOutsideComponent,
   ],
   imports: [
     BrowserModule,
