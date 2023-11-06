@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { ContentComponent } from './navigation/content/content.component';
 import { CustomValidatorComponent } from './components/1-custom-validator/custom-validator.component';
+import { DraggableComponent } from './components/4-draggable/draggable.component';
 import { HomeComponent } from './components/home/home.component';
 import { LazyLoadComponent } from './components/3-lazy-load/lazy-load.component';
 import { LazyLoadDirective } from './directives/3-lazy-load/lazy-load.directive';
@@ -35,6 +36,7 @@ import { RouterOutlet } from '@angular/router';
     AutofocusComponent,
     LazyLoadDirective,
     LazyLoadComponent,
+    DraggableComponent,
   ],
   imports: [
     BrowserModule,
