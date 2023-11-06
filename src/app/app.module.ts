@@ -1,6 +1,12 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { ContentComponent } from './navigation/content/content.component';
+import { CustomValidatorComponent } from './components/1-custom-validator/custom-validator.component';
+import { HomeComponent } from './components/home/home.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,11 +18,18 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
-import { ContentComponent } from './content/content.component';
+import { PasswordValidatorDirective } from './directives/custom-validator/password-validator.directive';
+import { RouterOutlet } from '@angular/router';
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, ContentComponent],
+  declarations: [
+    AppComponent,
+    NavigationComponent,
+    ContentComponent,
+    PasswordValidatorDirective,
+    CustomValidatorComponent,
+    HomeComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -30,8 +43,10 @@ import { ContentComponent } from './content/content.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    AppRoutingModule,
+    RouterOutlet,
+    FormsModule,
   ],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -7,11 +7,16 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar
+      class="cursor-pointer"
+      routerLink="/"
+      routerLinkActive="router-link-active"
+      >Directives</mat-toolbar
+    >
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item
+        ><p routerLink="/custom-validator">01. Custom validator</p></a
+      >
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -25,7 +30,6 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>angular-directives</span>
     </mat-toolbar>
     <app-content />
   </mat-sidenav-content>

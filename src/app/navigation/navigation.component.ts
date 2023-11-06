@@ -26,6 +26,15 @@ import { Observable } from 'rxjs';
         top: 0;
         z-index: 1;
       }
+
+      .cursor-pointer {
+        cursor: pointer;
+        transition: 1.2s;
+      }
+
+      .cursor-pointer:hover {
+        color: #c2185b;
+      }
     `,
   ],
 })
