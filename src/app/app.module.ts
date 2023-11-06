@@ -2,11 +2,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AutofocusComponent } from './components/2-autofocus/autofocus.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { ContentComponent } from './navigation/content/content.component';
 import { CustomValidatorComponent } from './components/1-custom-validator/custom-validator.component';
 import { HomeComponent } from './components/home/home.component';
+import { LazyLoadComponent } from './components/3-lazy-load/lazy-load.component';
+import { LazyLoadDirective } from './directives/3-lazy-load/lazy-load.directive';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -20,7 +23,6 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { NgModule } from '@angular/core';
 import { PasswordValidatorDirective } from './directives/1-custom-validator/password-validator.directive';
 import { RouterOutlet } from '@angular/router';
-import { AutofocusComponent } from './components/2-autofocus/autofocus/autofocus.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { AutofocusComponent } from './components/2-autofocus/autofocus/autofocus
     CustomValidatorComponent,
     HomeComponent,
     AutofocusComponent,
+    LazyLoadDirective,
+    LazyLoadComponent,
   ],
   imports: [
     BrowserModule,
